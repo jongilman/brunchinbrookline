@@ -1,0 +1,24 @@
+<%= render 'pages/home' %>
+
+<h1>Petition Supporters</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+           <!--  <%= render @petitions %> -->
+        </tbody>
+    </table>
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= user.name %>
+    </li>
+  <% end %>
+</ul>
+

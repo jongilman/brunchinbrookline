@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+            <p>
+              <%= @petition.description %>
+            </p>
+            <%= link_to 'Edit', edit_petition_path(@petition) %> |
+            <%= link_to 'Back', petitions_path %>
+        </div>
+    </div>
+</div>

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Brunchinbrookline::Application.load_tasks
+BrunchInBrookline::Application.load_tasks

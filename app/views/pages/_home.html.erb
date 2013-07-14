@@ -1,0 +1,12 @@
+<% unless user_signed_in? %>
+	<div class="center hero-unit">
+	<h1>Join the brunch movement!</h1>
+	<p>
+	  We're bringing together the Brookline community to bring an outstanding brunch to our neighborhood. Are you in?  
+	</p>
+	<p>
+	  <%= link_to "Sign the petition!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+
+	</p>
+	</div>
+<% end %>

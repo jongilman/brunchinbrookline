@@ -1,8 +1,14 @@
-Brunchinbrookline::Application.routes.draw do
+BrunchInBrookline::Application.routes.draw do
   
+  resources :signatures
+
+
+  resources :petitions
+
+
   devise_for :users
 
-  root :to => 'pages#home'
+  root :to => 'petitions#index'
   get 'about' => 'pages#about'
 
   # The priority is based upon order of creation:
